@@ -1,0 +1,95 @@
+html {
+    /* height: 100vh;
+    width: 100vw; */
+    background-image: url(silhouette-photography-of-trees-and-birds-2080961.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.qs {
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    height: 400px;
+    justify-content: space-around;
+}
+
+.qs-small {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    align-content: space-around;
+    align-items: space-around;
+    justify-items: space-around;
+    justify-content: space-between;
+}
+
+#pulledQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #26afeb;
+    border: 1px solid #26afeb;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c7faa;
+    border: 1px solid #1c7faa;
+}
+
+.pitanjaIkugle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stoperica {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ukupnoVreme {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer {
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+footer>div {
+    padding: 5px 10px;
+}
+
+.heart {
+    height: 10px;
+}
+
