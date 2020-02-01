@@ -13,23 +13,13 @@ h1 {
     margin-top: 10px;
 }
 
-.qs {
-    display: flex;
-    flex-direction: column;
-    /* width: 40%; */
-    height: 400px;
-    justify-content: space-around;
-}
-
-.qs-small {
+#qs {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    align-content: space-around;
-    align-items: space-around;
-    justify-items: space-around;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
+
 
 #pulledQ {
     display: flex;
@@ -48,6 +38,21 @@ button {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+}
+
+
+#iBrojPitanja {
+    width: 180px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px;
+    margin-bottom: 10px;
+}
+
+#unosniTaster {
+    display: flex;
+    flex-direction: column;
 }
 
 button:hover {
@@ -92,4 +97,16 @@ footer>div {
 .heart {
     height: 10px;
 }
+
+#isPit {
+    display: none;
+    width: 23%;
+}
+
+.item {
+    margin: 10px
+}
+
+
+
 

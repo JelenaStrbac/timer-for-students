@@ -6,16 +6,43 @@ const starter = document.getElementById("questionButton");
 starter.addEventListener("click", changeQuestion);
 
 
-// IIFE funkcija koja pravi nasumicnu kombinaciju svih ispitnih pitanja (brojevi pitanja se ne ponavljaju)
-(function startIt() {
-    while (numbers.length < 80) {
-        let randomNumber = Math.ceil(Math.random() * 80);
+// f-ja za unos broja pitanja
+
+
+function unesiBroj() {
+    const br = Number(document.getElementById("iBrojPitanja").value);
+
+    document.getElementById("isPit").style.display = "flex";
+    document.getElementById("isPit").style.flexDirection = "column";
+
+    document.getElementById("unosniTaster").style.display = "none";
+
+    for (let n = 1; n < (br + 1); n++) {
+        var g = document.createElement("div");
+        g.innerHTML = n;
+        g.setAttribute('id', n);
+        g.setAttribute('class', 'item');
+        document.getElementById("qs").appendChild(g);
+    }
+    console.log(br);
+    startIt();
+};
+
+
+
+
+
+// Funkcija koja pravi nasumicnu kombinaciju svih ispitnih pitanja (brojevi pitanja se ne ponavljaju)
+function startIt() {
+    const br = document.getElementById("iBrojPitanja").value;
+    while (numbers.length < br) {
+        let randomNumber = Math.ceil(Math.random() * br);
         if (numbers.indexOf(randomNumber) === -1) {
             numbers.push(randomNumber);
         }
     }
     console.log(numbers)
-}());
+};
 
 
 // funkcija koja na klik bira pitanje (ide kroz niz-odabranu kombinaciju); na kraju se ubacuje natpis i slika
@@ -44,6 +71,8 @@ function changeQuestion() {
         align-content: space-between; justify-content: space-between">K R A J!!!<br>
         Cestitam, spreman si za ispit!<br>
         <img src="goku.png" style="width: 100px"></div>`;
+        document.getElementById(`${numbers[i]}`).style.opacity = "0.4";
+        document.getElementById(`${numbers[i]}`).style.textDecoration = "line-through";
     }
     timestrToSec()
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        #qs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 40%;
+            height: 400px;
+            /* justify-content: space-around; */
+            align-content: space-between;
+            justify-content: space-between;
+        }
+
+        .item {
+            margin: 10px
+        }
+
+        .item:nth-child(3n) {
+            page-break-after: always;
+            /* CSS 2.1 syntax
+            break-after: always; */
+            /* New syntax */
+        }
+    </style>
+
+    <div id="unosniTaster">
+        <input type="number" name="nBrojPitanja" id="iBrojPitanja" value="" placeholder="Unesite broj pitanja. . .">
+        <button id="tasterZaPitanja" onclick="unesiBroj()">Posalji</button>
+    </div>
+    <div id="qs"></div>
+
+    <script>
+
+
+        function unesiBroj() {
+            const br = document.getElementById("iBrojPitanja").value;
+            console.log(br);
+
+            for (let n = 1; n < Number(br) + 1; n++) {
+                var g = document.createElement("div");
+                g.innerHTML = n;
+                g.setAttribute('id', n);
+                g.setAttribute('class', 'item');
+                document.getElementById("qs").appendChild(g);
+                console.log(br);
+                console.log(n);
+
+                for (let j = 0; j < 10; j += 10) {
+                    var b = document.createElement("p");
+                    b.setAttribute('width', '100%');
+                    b.setAttribute('display', 'block');
+                    b.innerText = "blaaaa";
+                    document.getElementById("qs").appendChild(b);
+                }
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
