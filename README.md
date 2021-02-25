@@ -1,5 +1,13 @@
 # Focusing timer for students
 
+<div align="center" markdown="1">
+
+<img src="./gifs/timer-1.gif" alt="timer-enter-questions">
+<img src="./gifs/timer-2.gif" alt="timer-track-time-of-questions">
+<img src="./gifs/timer-3.gif" alt="timer-finish-questions">
+
+</div>
+
 Very simple vanilla JS project based on famous Pomodoro technique 🍅 (a time management system that encourages people to work with the time they have).
 
 As a new way to enhance productivity of students, the app measures the time student needs for studying each question for its exam.
