@@ -2,9 +2,9 @@
 
 <div align="center" markdown="1">
 
-<img src="./gifs/timer-1.gif" alt="timer-enter-questions">
-<img src="./gifs/timer-2.gif" alt="timer-track-time-of-questions">
-<img src="./gifs/timer-3.gif" alt="timer-finish-questions">
+<img src="./gifs/timer-1.gif" height="150" alt="timer-enter-questions">
+<img src="./gifs/timer-2.gif" height="150" alt="timer-track-time-of-questions">
+<img src="./gifs/timer-3.gif" height="150" alt="timer-finish-questions">
 
 </div>
 
